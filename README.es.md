@@ -93,6 +93,21 @@ LICENSE                       ← MIT
 
 YouTube / Twitch / Kick creators que quieran un pack OBS serio (Empezando, Charlando, Juego, Pausa, Final + transición) generado con IA, con identidad propia.
 
+
+## Cómo agregarlo a OBS (cuando tu IA termine el pack)
+
+Tu IA debería entregarte ZIPs + un LEEME / README de tu canal. Flujo resumido:
+
+1. Pon el lienzo de OBS en **1920×1080** **antes** de importar: **Ajustes → Video → Resolución base (lienzo)** y **Resolución de salida (escalada)** ambas en `1920x1080`.
+2. Descomprime el pack en la ruta que elegiste (ejemplo: `C:\TuCanal_OBS`). Respeta la estructura que diga el LEEME.
+3. En OBS: **Colección de escenas → Importar** → elige el JSON del pack (ej. `*_coleccion_OBS.json`).
+4. En fuentes multimedia que deban repetirse: activa **Bucle**. Para pixel art, filtro de escala **Punto** / Point.
+5. Stinger (si viene): **Ajustes → Transiciones de escena → Stinger** → el WebM (VP9 + alpha). Punto de transición tipo **Tiempo (ms)** — cortes típicos: ~750 ms (stinger 1,5 s) o ~400 ms (rápido 0,8 s). Usa la versión muda si no quieres el sonido.
+6. Chat: añade una fuente **Navegador** dentro del marco de chat; la posición sale de **tu** `layout.json` / LEEME — no copies coords de Notblu.
+7. Cámara: mete tu captura en el hueco/marco de cámara en las escenas que la usen.
+
+Si se ve estirado o borroso, revisa 1920×1080 y el filtro Punto antes de volver a importar.
+
 ## Créditos
 
 Creado a partir del trabajo de **Notblu** ([@notblu14](https://www.youtube.com/@notblu14)) con Grok Bot. El ejemplo visual en `examples/notblu/` es solo referencia histórica.

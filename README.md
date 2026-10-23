@@ -98,6 +98,21 @@ LICENSE                       ← MIT
 
 YouTube / Twitch / Kick creators who want a serious OBS pack (Starting Soon, Just Chatting, Game, BRB, Ending + stinger) generated with AI — with their **own** identity.
 
+
+## Install the pack in OBS (after your AI finishes)
+
+Your AI should deliver ZIPs + a LEEME / README for your channel. High-level flow:
+
+1. Set OBS canvas to **1920×1080** first: **Settings → Video → Base (Canvas) Resolution** and **Output (Scaled) Resolution** both `1920x1080`. Import only after this.
+2. Unzip the pack to the path you chose (example: `C:\YourChannel_OBS`). Keep the folder structure the LEEME describes.
+3. In OBS: **Scene Collection → Import** → pick the JSON from the pack (e.g. `*_coleccion_OBS.json`).
+4. For media sources that should loop: enable **Loop**. Prefer scale filter **Point** / **Nearest** for pixel art.
+5. Stinger (if included): **Settings → Scene Transitions → Stinger** → select the WebM (VP9 + alpha). Set transition point type to **Time (ms)** — typical cuts: ~750 ms (1.5 s stinger) or ~400 ms (0.8 s fast stinger). Use the muted version if you don’t want the whoosh.
+6. Chat: add a **Browser** source inside the chat frame; position comes from **your** `layout.json` / LEEME — don’t copy Notblu coords.
+7. Webcam: put your capture source in the camera cutout frame for the scenes that need it.
+
+If anything looks stretched or soft, re-check canvas 1920×1080 and Point filtering before re-importing.
+
 ## Credits
 
 Built from **Notblu** ([@notblu14](https://www.youtube.com/@notblu14)) work with Grok Bot. Visuals in `examples/notblu/` are historical reference only.
