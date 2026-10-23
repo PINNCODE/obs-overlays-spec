@@ -16,7 +16,8 @@ Solo necesitas **dos archivos** de este repo (o clona todo):
 
 | Archivo | Qué es |
 |---|---|
-| [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md) | Instrucciones completas que la IA debe seguir (fuente de verdad) |
+| [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md) | Instrucciones completas que la IA debe seguir (**español** — principal) |
+| [`docs/SPEC_OVERLAYS_OBS.en.md`](docs/SPEC_OVERLAYS_OBS.en.md) | Misma SPEC en **inglés** (gemelo) |
 | [`prompts/PROMPT_MAESTRO.md`](prompts/PROMPT_MAESTRO.md) | Prompt corto que pegas primero (español). Gemelo en inglés: [`PROMPT_MASTER.md`](prompts/PROMPT_MASTER.md) |
 
 Opcional: mira [`examples/notblu/`](examples/notblu/) como **un** resultado histórico — **no copies** ese layout.
@@ -80,7 +81,8 @@ Si dos canales hechos con este SPEC se ven hermanos en un screenshot, el agente 
 ## Contenido del repo
 
 ```
-docs/SPEC_OVERLAYS_OBS.md     ← SPEC completa (fuente de verdad)
+docs/SPEC_OVERLAYS_OBS.md     ← SPEC completa (español — principal)
+docs/SPEC_OVERLAYS_OBS.en.md  ← SPEC completa (inglés — gemelo)
 docs/CHANGELOG_anti_clon.md   ← qué cambió vs la versión “clonable”
 prompts/PROMPT_MASTER.md      ← prompt en inglés
 prompts/PROMPT_MAESTRO.md     ← prompt en español (también copiado arriba)
@@ -88,6 +90,8 @@ examples/notblu/              ← capturas de UN ejemplo (no plantilla)
 README.md                     ← README en inglés (principal en GitHub)
 LICENSE                       ← MIT
 ```
+
+> El SPEC en español sigue siendo el principal. Existe un gemelo en inglés: [`docs/SPEC_OVERLAYS_OBS.en.md`](docs/SPEC_OVERLAYS_OBS.en.md).
 
 ## Para quién es
 

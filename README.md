@@ -16,18 +16,19 @@ You only need **two files** from this repo (or clone the whole thing):
 
 | File | What it is |
 |---|---|
-| [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md) | Full instructions the AI must follow (source of truth) |
+| [`docs/SPEC_OVERLAYS_OBS.en.md`](docs/SPEC_OVERLAYS_OBS.en.md) | Full instructions the AI must follow (**English** — prefer this) |
+| [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md) | Same SPEC in **Spanish** (alternate) |
 | [`prompts/PROMPT_MASTER.md`](prompts/PROMPT_MASTER.md) | Short prompt you paste first (English). Spanish twin: [`PROMPT_MAESTRO.md`](prompts/PROMPT_MAESTRO.md) |
 
 Optional: look at [`examples/notblu/`](examples/notblu/) for **one** historical result — **do not copy** that layout.
 
 ## Master prompt (copy-paste)
 
-Fill in the `<…>` with **your** channel data, attach `SPEC_OVERLAYS_OBS.md` + your images (I1–I9), then paste this into any AI:
+Fill in the `<…>` with **your** channel data, attach `SPEC_OVERLAYS_OBS.en.md` (or Spanish `SPEC_OVERLAYS_OBS.md`) + your images (I1–I9), then paste this into any AI:
 
 ```
-Act as art director and technical producer for OBS overlays. Follow SPEC_OVERLAYS_OBS.md
-to the letter (phases 0–7, with an approval CHECKPOINT at the end of each phase).
+Act as art director and technical producer for OBS overlays. Follow SPEC_OVERLAYS_OBS.en.md
+(or Spanish SPEC_OVERLAYS_OBS.md) to the letter (phases 0–7, with an approval CHECKPOINT at the end of each phase).
 
 HARD REQUIREMENT — UNIQUENESS (anti-clone): invent layout, hierarchy, and placement from
 concept art (I1), YES/NO references (I9), textures (I5), logo/avatar, and the style bible.
@@ -58,7 +59,7 @@ Same text lives in [`prompts/PROMPT_MASTER.md`](prompts/PROMPT_MASTER.md) if you
 
 ## How to use it (3 steps)
 
-1. Download / open `docs/SPEC_OVERLAYS_OBS.md` and copy the master prompt above (or from `prompts/PROMPT_MASTER.md`).
+1. Download / open `docs/SPEC_OVERLAYS_OBS.en.md` (English) — or `docs/SPEC_OVERLAYS_OBS.md` (Spanish) — and copy the master prompt above (or from `prompts/PROMPT_MASTER.md`).
 2. In **any** AI: attach the SPEC file, paste the prompt, fill your channel fields, upload your refs (I1–I9).
 3. Start at **Phase 0**. Do not jump to PNGs before choosing a layout direction.
 
@@ -83,7 +84,8 @@ If two channels built with this SPEC look like siblings in a screenshot, the age
 ## Repo contents
 
 ```
-docs/SPEC_OVERLAYS_OBS.md     ← full SPEC (source of truth; currently Spanish)
+docs/SPEC_OVERLAYS_OBS.en.md  ← full SPEC (English)
+docs/SPEC_OVERLAYS_OBS.md     ← full SPEC (Spanish original)
 docs/CHANGELOG_anti_clon.md   ← what changed vs the “cloneable” version
 prompts/PROMPT_MASTER.md      ← English prompt (also copied above)
 prompts/PROMPT_MAESTRO.md     ← Spanish prompt
@@ -92,7 +94,7 @@ README.es.md                  ← Spanish README
 LICENSE                       ← MIT
 ```
 
-> Note: the full SPEC body is still in Spanish. README + master prompts are bilingual so you can run the flow in EN or ES.
+> English users: prefer `docs/SPEC_OVERLAYS_OBS.en.md`. Spanish original remains at `docs/SPEC_OVERLAYS_OBS.md`. README + master prompts are bilingual.
 
 ## Who it’s for
 
