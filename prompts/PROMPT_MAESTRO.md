@@ -1,5 +1,7 @@
 # Prompt maestro (cópialo en tu IA)
 
+English twin: [`PROMPT_MASTER.md`](PROMPT_MASTER.md).
+
 Adjunta también [`docs/SPEC_OVERLAYS_OBS.md`](../docs/SPEC_OVERLAYS_OBS.md) y tus imágenes (I1–I9).
 
 Rellena los `<…>` con los datos de **tu** canal.

@@ -1,53 +1,59 @@
-# OBS Overlays Spec (anti-clon)
+# OBS Overlays Spec (anti-clone)
 
-**Playbook open-source** para que **cualquier** streamer arme un paquete de overlays OBS con una IA — sin terminar con el mismo HUD centrado de siempre.
+[Español → README.es.md](README.es.md)
 
-Este repo **no** es un skin listo para Notblu. Es el SPEC + prompt para que tu agente invente layout, jerarquía y posiciones a partir de **tu** arte y assets.
+**Open-source playbook** so **any** streamer can build a full OBS overlay pack with an AI — without ending up with the same centered HUD every time.
 
-## Qué resuelve
+This repo is **not** a ready-made Notblu skin. It is the SPEC + master prompt so your agent invents layout, hierarchy, and positions from **your** art and assets.
 
-- Overlays OBS 1920×1080 listos para importar (colección JSON)
-- PNG separados con transparencia, animaciones WebM VP9 con alpha, stinger, branding
-- **Unicidad obligatoria:** en Fase 3 la IA propone **2–3 direcciones de layout** con mocks; tú eliges; luego escribe un `layout.json` único. Misma lista de *tipos* de elementos ≠ misma geometría.
+## What it solves
 
-## Validación anti-clon (resumen)
+- OBS 1920×1080 overlays ready to import (JSON scene collection)
+- Separate PNGs with alpha, WebM VP9 animations with alpha, stinger transition, branding
+- **Uniqueness is required:** in Phase 3 the AI proposes **2–3 layout directions** with mocks; you pick one; then it writes a unique `layout.json`. Same *types* of elements ≠ same geometry.
 
-| Qué | Estado |
+## Anti-clone validation (summary)
+
+| Check | Status |
 |---|---|
-| Coordenadas fijas tipo “título en (540,282)” como receta | **Eliminadas** del flujo operativo |
-| Posición de cámara / chat | Libre vía `layout.json` del proyecto |
-| Huecos de cámara 16:9 | Contrato técnico (aspecto), no plantilla de layout |
-| Apéndice Notblu | Solo ejemplo histórico con advertencia **NUNCA copiar** |
-| QA | Checkboxes de unicidad + mocks previos |
+| Fixed coords like “title at (540,282)” as a recipe | **Removed** from the operating flow |
+| Camera / chat position | Free via this project’s `layout.json` |
+| 16:9 camera cutouts | Technical aspect contract, not a layout template |
+| Notblu appendix | Historical example only — **NEVER copy** |
+| QA | Uniqueness checkboxes + mocks before PNGs |
 
-Si dos canales hechos con este SPEC se ven hermanos en un screenshot, el agente **falló**.
+If two channels built with this SPEC look like siblings in a screenshot, the agent **failed**.
 
-## Cómo usarlo (3 pasos)
+## How to use it (3 steps)
 
-1. Baja o clona este repo.
-2. Abre tu IA favorita y adjunta [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md).
-3. Pega el texto de [`prompts/PROMPT_MAESTRO.md`](prompts/PROMPT_MAESTRO.md), rellena tus datos y sube tus imágenes (I1–I9 del SPEC).
+1. Clone or download this repo.
+2. Open your favorite AI and attach [`docs/SPEC_OVERLAYS_OBS.md`](docs/SPEC_OVERLAYS_OBS.md).
+3. Paste [`prompts/PROMPT_MASTER.md`](prompts/PROMPT_MASTER.md) (or the Spanish [`PROMPT_MAESTRO.md`](prompts/PROMPT_MAESTRO.md)), fill in your channel data, and upload your images (I1–I9 from the SPEC).
 
-Empieza en **Fase 0**. No saltes a PNG sin elegir una dirección de layout.
+Start at **Phase 0**. Do not jump to PNGs before choosing a layout direction.
 
-## Contenido del repo
+## Repo contents
 
 ```
-docs/SPEC_OVERLAYS_OBS.md     ← SPEC completa (fuente de verdad)
-docs/CHANGELOG_anti_clon.md   ← qué cambió vs la versión “clonable”
-prompts/PROMPT_MAESTRO.md     ← prompt listo para pegar
-examples/notblu/              ← capturas de UN ejemplo (no plantilla)
+docs/SPEC_OVERLAYS_OBS.md     ← full SPEC (source of truth; currently Spanish)
+docs/CHANGELOG_anti_clon.md   ← what changed vs the “cloneable” version
+prompts/PROMPT_MASTER.md      ← English prompt ready to paste
+prompts/PROMPT_MAESTRO.md     ← Spanish prompt ready to paste
+examples/notblu/              ← screenshots of ONE example (not a template)
+README.es.md                  ← Spanish README
 LICENSE                       ← MIT
 ```
 
-## Para quién es
+> Note: the full SPEC body is still in Spanish. The README + master prompts are bilingual so you can run the flow in EN or ES. An English SPEC translation can be added later.
 
-YouTube / Twitch / Kick creators que quieran un pack OBS serio (escenas Empezando, Charlando, Juego, Pausa, Final + transición) generado con IA, con identidad propia.
+## Who it’s for
 
-## Créditos
+YouTube / Twitch / Kick creators who want a serious OBS pack (Starting Soon, Just Chatting, Game, BRB, Ending + stinger) generated with AI — with their **own** identity.
 
-Creado a partir del trabajo de **Notblu** ([@notblu14](https://www.youtube.com/@notblu14)) con Grok Bot. El ejemplo visual en `examples/notblu/` es solo referencia histórica.
+## Credits
 
-## Licencia
+Built from **Notblu** ([@notblu14](https://www.youtube.com/@notblu14)) work with Grok Bot. Visuals in `examples/notblu/` are historical reference only.
 
-MIT — úsalo, forkéalo, mejóralo. Si publicas un pack hecho con este SPEC, un link al repo ayuda a que más gente no clone el mismo layout.
+## License
+
+MIT — use it, fork it, improve it. If you publish a pack made with this SPEC, linking this repo helps more people avoid cloning the same layout.
