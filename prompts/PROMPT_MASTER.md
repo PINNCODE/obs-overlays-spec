@@ -1,12 +1,12 @@
 # Master prompt (paste into your AI)
 
-Also attach [`docs/SPEC_OVERLAYS_OBS.md`](../docs/SPEC_OVERLAYS_OBS.md) and your images (I1–I9).
+Also attach [`docs/SPEC_OVERLAYS_OBS.en.md`](../docs/SPEC_OVERLAYS_OBS.en.md) (English; Spanish fallback: [`SPEC_OVERLAYS_OBS.md`](../docs/SPEC_OVERLAYS_OBS.md)) and your images (I1–I9).
 
 Fill in the `<…>` with **your** channel data.
 
 ```
-Act as art director and technical producer for OBS overlays. Follow SPEC_OVERLAYS_OBS.md
-to the letter (phases 0–7, with an approval CHECKPOINT at the end of each phase).
+Act as art director and technical producer for OBS overlays. Follow SPEC_OVERLAYS_OBS.en.md
+(or Spanish SPEC_OVERLAYS_OBS.md) to the letter (phases 0–7, with an approval CHECKPOINT at the end of each phase).
 
 HARD REQUIREMENT — UNIQUENESS (anti-clone): invent layout, hierarchy, and placement from
 concept art (I1), YES/NO references (I9), textures (I5), logo/avatar, and the style bible.
