@@ -83,7 +83,7 @@ Si dos canales hechos con este SPEC se ven hermanos en un screenshot, el agente 
 ```
 docs/SPEC_OVERLAYS_OBS.md     ← SPEC completa (español — principal)
 docs/SPEC_OVERLAYS_OBS.en.md  ← SPEC completa (inglés — gemelo)
-docs/CHANGELOG_anti_clon.md   ← qué cambió vs la versión “clonable”
+docs/CHANGELOG_anti_clon.md   ← qué cambió vs la versión “clonable” (EN: CHANGELOG_anti_clon.en.md)
 prompts/PROMPT_MASTER.md      ← prompt en inglés
 prompts/PROMPT_MAESTRO.md     ← prompt en español (también copiado arriba)
 examples/notblu/              ← capturas de UN ejemplo (no plantilla)

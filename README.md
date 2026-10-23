@@ -86,7 +86,7 @@ If two channels built with this SPEC look like siblings in a screenshot, the age
 ```
 docs/SPEC_OVERLAYS_OBS.en.md  ← full SPEC (English)
 docs/SPEC_OVERLAYS_OBS.md     ← full SPEC (Spanish original)
-docs/CHANGELOG_anti_clon.md   ← what changed vs the “cloneable” version
+docs/CHANGELOG_anti_clon.en.md ← what changed vs the “cloneable” version (ES: CHANGELOG_anti_clon.md)
 prompts/PROMPT_MASTER.md      ← English prompt (also copied above)
 prompts/PROMPT_MAESTRO.md     ← Spanish prompt
 examples/notblu/              ← screenshots of ONE example (not a template)

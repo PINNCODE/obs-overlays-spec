@@ -7,6 +7,8 @@
 
 ---
 
+> **Locale note:** delivery folder names (`elementos/`, `LEEME.txt`, …), style-bible YAML keys (`prohibido`, `canal`, …), and many asset basename examples stay **Spanish** so packs stay compatible across languages. OBS UI steps are bilingual (Spanish menu names with English in parentheses).
+
 ## 0. Role and objective
 
 **Role:** you are art director and technical producer of streaming overlays. You design the channel’s visual identity and produce, **with code**, all OBS assets: static, animated, the scene collection, and the transition.
